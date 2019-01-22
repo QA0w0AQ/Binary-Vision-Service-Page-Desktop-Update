@@ -64,7 +64,6 @@ export class MainComponent implements OnInit {
 
       if (st > this.lastScrollTop && st > this.navbarHeight) {
           document.getElementById('logo-nav-box').style.top = '-4vw';
-          document.getElementById('menu').className = 'menu-wrapper animated fadeOutRight';
           this.isMenuOpened = false;
       } else {
           if (st < this.lastScrollTop || st < this.navbarHeight) {
@@ -165,15 +164,9 @@ sendForm() {
       document.getElementById('logo-nav-box').style.display = 'flex';
       document.getElementById('logo-nav-box').className = 'logo-nav-box animated fadeInDown';
   }, 100);
-  document.getElementById('menu-btn').onmouseover = () => {
-      document.getElementById('menu-btn').setAttribute('src', 'assets/Services/menu-hover.png');
-  };
-  document.getElementById('menu-btn').onmouseout = () => {
-      document.getElementById('menu-btn').setAttribute('src', 'assets/Services/menu.png');
-  };
   document.getElementById('logo-nav-box').addEventListener('animationend', () => {
       document.getElementById('header-title').style.display = 'block';
-      document.getElementById('header-title').className = 'title animated fadeInRight';
+      document.getElementById('header-title').className = 'headertitle animated fadeInRight';
   });
   setTimeout(() => {
     document.getElementById('main-header').style.display = 'block';
@@ -181,7 +174,7 @@ sendForm() {
 }, 2400);
 document.getElementById('header-title').addEventListener('animationend', () => {
     document.getElementById('header-subtitle').style.display = 'block';
-    document.getElementById('header-subtitle').className = 'subtitle animated fadeInRight';
+    document.getElementById('header-subtitle').className = 'headersubtitle animated fadeInRight';
 });
 // document.getElementById('case-studies-section').addEventListener('animationend', () => {
 //   document.getElementById('binaryvision').style.display = 'block';

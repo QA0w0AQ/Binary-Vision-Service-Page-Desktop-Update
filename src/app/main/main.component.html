@@ -92,63 +92,9 @@
 <header id="header">
   <div id="logo-nav-box" class="logo-nav-box">
     <a (click)="routeTo('home')">
-        <img id="logo-image" src="assets/Services/Group 4.png" class="logo" alt="">
+        <img id="logo-image" src="assets/images/logo.png" class="logo" alt="">
     </a>
-    <div id="menu-btn-wrapper" class="menu-btn-wrapper">
-        <img id="menu-btn" src="assets/Services/menu.png" class="menu-btn" alt="" (click)="openMenu()">
-    </div>
-    <div id="menu" class="menu-wrapper">
-        <i class="fas fa-times"(click)="openMenu()"></i>
-
-        <div class="case-studies-content">
-            <span class="menu-title">Case studies</span>
-            <ul>
-                <li>
-                    <a (click)="routeTo('beteaze')">BetEaze</a>
-                </li>
-                <li>
-                    <a (click)="routeTo('arvin')">Arvin</a>
-                </li>
-                <li>
-                    <a (click)="routeTo('koffee')">lungo Social</a>
-                </li>
-            </ul>
-        </div>
-        <div class="contact-content">
-            <span class="menu-title">Contact</span>
-            <ul>
-                <li>
-                    <a href="mailto:hello@binary.vision">
-                        <i class="fas fa-at"></i>
-                        <span>hello@binary.vision</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="tel:+604-359-7187">
-                        <i class="fas fa-phone"></i>
-                        <span>+604-359-7187</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <ul class="social-list">
-            <li>
-                <a href="#">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="fab fa-instagram"></i>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="fab fa-youtube"></i>
-                </a>
-            </li>
-        </ul>
-    </div>
+    <app-menu></app-menu>
 </div>
 <img src="assets/Services/Group 9.svg" alt="" id="main-header" class="main-header">
 <div class="main-title-box">
