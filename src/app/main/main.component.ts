@@ -259,6 +259,7 @@ moveBackground();
 
 
     const caseStudiesSection = document.getElementById('case-studies-section').offsetTop;
+    const caseStudiesBVSection = document.getElementById('case-studies-section binaryvision').offsetTop;
     const binaryvisionSection = document.getElementById('case-studies-section binaryvision').offsetTop -  (window.innerHeight * 14 / 100) -
     (window.innerHeight * 12 / 100) * 2;
     const caseStudiesSectionEnd = document.getElementById('case-studies-section').offsetTop +
@@ -267,10 +268,10 @@ moveBackground();
     const binaryvisionDevelopment = document.getElementById('background1').offsetTop + (window.innerHeight * 1326 / 1000);
   
     
-    if (top >= caseStudiesSection && top <= caseStudiesSectionEnd) {
+    if (top >= caseStudiesBVSection && top <= caseStudiesSectionEnd) {
         document.getElementById('logo-image').setAttribute('src', 'assets/Services/logo_black.png');
     } else {
-        document.getElementById('logo-image').setAttribute('src', 'assets/Services/logo.png');
+        document.getElementById('logo-image').setAttribute('src', 'assets/images/group-4.png');
     }
     //Binary Vision content
     if (top>=binaryvisionSection){

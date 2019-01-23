@@ -40,7 +40,7 @@
 	.box1, .box2, .box3 {
 		line-height: 5vw;
 		font-size: 1.4vw;
-		font-family: Montserrat,sans-serif;
+		font-family: 'Montserrat';
 		color: white;
 		font-weight: bold;
 	}
@@ -64,7 +64,7 @@ sup {
 .navigation {
 	--color-text: #fbd54a;
 	--color-bg: #333;
-	--color-link: #4d4f5f;
+	--color-link: #ffffff;
 	--color-link-hover: #bfb5b5;
 	--color-info: #fff;
 	--color-main-bg: #24262d;
@@ -75,12 +75,12 @@ sup {
 	--path-fill-5:#00ffd2;
 	--path-fill-6: #0E1529;	
 	--color-title: #fff;
-	--font-family-title: 'Arapey', serif;
+	--font-family-title: 'Montserrat';
 	--font-size-title: 5vmax;
 	--font-weight-title: 400;
 	--color-menu: #fff;
 	--color-menu-hover: #000000;
-	--font-family-menu: 'Montserrat', sans-serif;
+	--font-family-menu: 'Montserrat';
 	--font-size-menu: 3vmax;
 	--font-weight-menu: bold;
 	--button-bg: #fff;
@@ -107,8 +107,7 @@ sup {
   flex-direction: row;
   margin-top: 38vw;
   margin-right: 35vw;
-  transition-delay: 1s;
-  transition-duration: 0.5s;
+  transition-duration: 1s;
 }
 .contacts-social-lists ul {
   list-style: none;
@@ -209,7 +208,9 @@ sup {
 .global-menu__item.global-menu__item--navigation.is-opened .menu__item-label {
 	font-size: 0.30em;
 	margin-top: 0.5em;
-	font-family: Poppins,sans-serif;
+	font-weight: 300;
+	line-height: 1.2vw;
+	font-family: 'Poppins';
 	padding-bottom: 0.5em;
 	letter-spacing: 0.05em;
 	color: var(--color-link);
@@ -239,7 +240,9 @@ sup {
 .global-menu__item.global-menu__item--navigation .menu__item-label {
 	font-size: 0.30em;
 	margin-top: 0.5em;
-	font-family: Poppins,sans-serif;
+	font-weight: 300;
+	line-height: 1.2vw;
+	font-family: 'Poppins';
 	padding-bottom: 0.5em;
 	letter-spacing: 0.05em;
 	color: var(--color-link);
@@ -586,7 +589,7 @@ a.demo--current {
 }
 
 .global-menu__item--navigation.is-opened:nth-of-type(1) {
-	transition-delay: 1.35s;
+	transition-delay: 0.65s;
 }
 
 .global-menu__item--navigation:nth-of-type(2) {
@@ -594,7 +597,7 @@ a.demo--current {
 }
 
 .global-menu__item--navigation.is-opened:nth-of-type(2) {
-	transition-delay: 1.4s;
+	transition-delay: 0.7s;
 }
 
 .global-menu__item--navigation:nth-of-type(3) {
@@ -602,7 +605,7 @@ a.demo--current {
 }
 
 .global-menu__item--navigation.is-opened:nth-of-type(3) {
-	transition-delay: 1.45s;
+	transition-delay: 0.75s;
 }
 
 .global-menu__item--navigation:nth-of-type(4) {
@@ -610,7 +613,7 @@ a.demo--current {
 }
 
 .global-menu__item--navigation.is-opened:nth-of-type(4) {
-	transition-delay: 1.5s;
+	transition-delay: 0.8s;
 }
 
 .global-menu__item--navigation:nth-of-type(5) {
@@ -618,7 +621,7 @@ a.demo--current {
 }
 
 .global-menu__item--navigation.is-opened:nth-of-type(5) {
-	transition-delay: 1.55s;
+	transition-delay: 0.85s;
 }
 
 
@@ -636,24 +639,14 @@ a.demo--current {
 }
 
 .shape-overlays__path:nth-of-type(1) {
-	fill: var(--path-fill-1);
+	fill: var(--path-fill-4);
 }
 
 .shape-overlays__path:nth-of-type(2) {
-	fill: var(--path-fill-2);
-}
-
-.shape-overlays__path:nth-of-type(3) {
 	fill: var(--path-fill-3);
 }
 
-.shape-overlays__path:nth-of-type(4) {
-	fill: var(--path-fill-4);
-}
-.shape-overlays__path:nth-of-type(5) {
-	fill: var(--path-fill-5);
-}
-.shape-overlays__path:nth-of-type(6) {
+.shape-overlays__path:nth-of-type(3) {
 	fill: var(--path-fill-6);
 }
 
@@ -709,25 +702,25 @@ a.demo--current {
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
-.hamburger::after {
-	width: 64px;
-	height: 64px;
-	box-sizing: border-box;
-	content: '';
-	display: block;
-	position: absolute;
-	top: 0;
-	left: 0;
-	pointer-events: none;
-	border: 4px solid var(--button-circle);
-	border-radius: 50%;
-	-webkit-animation-duration: 1.2s;
-	animation-duration: 1.2s;
-	-webkit-animation-name: intervalHamburgerBorder;
-	animation-name: intervalHamburgerBorder;
-	-webkit-animation-iteration-count: infinite;
-	animation-iteration-count: infinite;
-}
+// .hamburger::after {
+// 	width: 64px;
+// 	height: 64px;
+// 	box-sizing: border-box;
+// 	content: '';
+// 	display: block;
+// 	position: absolute;
+// 	top: 0;
+// 	left: 0;
+// 	pointer-events: none;
+// 	border: 4px solid var(--button-circle);
+// 	border-radius: 50%;
+// 	-webkit-animation-duration: 1.2s;
+// 	animation-duration: 1.2s;
+// 	-webkit-animation-name: intervalHamburgerBorder;
+// 	animation-name: intervalHamburgerBorder;
+// 	-webkit-animation-iteration-count: infinite;
+// 	animation-iteration-count: infinite;
+// }
 
 .hamburger__line {
 	width: 28px;

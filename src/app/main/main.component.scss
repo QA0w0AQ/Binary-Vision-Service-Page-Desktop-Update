@@ -1,7 +1,9 @@
 :focus {
   outline: none;
 }
-
+sup {
+  font-size: medium;
+}
 
 .title {
   font-size: 4.8vw;
@@ -11,7 +13,7 @@
   display: none;
   padding-right: 6.5vw;
   animation-duration: 0.6s;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins';
   font-weight: lighter;
   text-align: right;
 }
@@ -22,7 +24,7 @@
   color: #F7F6F3;
   display: none;
   animation-duration: 0.6s;
-  font-family: 'Monteserrat', sans-serif;
+  font-family: 'Montserrat';
   font-weight: 700;
   float: right;
 }
@@ -34,7 +36,7 @@
   display: none;
   padding-right: 5.5vw;
   animation-duration: 0.6s;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins';
   font-weight: lighter;
   text-align: right;
 }
@@ -44,7 +46,7 @@
   color: #F7F6F3;
   display: none;
   animation-duration: 0.6s;
-  font-family: 'Monteserrat', sans-serif;
+  font-family: 'Montserrat';
   font-weight: 700;
   float: right;
 }
@@ -55,23 +57,24 @@
   color: #F7F6F3;
   margin-bottom: 0;
   display: none;
+  font-weight: 200;
   animation-duration: 0.6s;
-  font-family: 'Poppins', sans-serif;
-  font-weight: lighter;
+  font-family: 'Poppins';
 }
 
 .footersubtitle {
   font-size: 4vw;
   line-height: 4.8vw;
+  font-weight: 200;
   color: #F7F6F3;
   display: none;
   animation-duration: 0.6s;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins';
 }
 .scroll-box {
   position: absolute;
   //bottom: -3vw;
-  bottom: -3.2vw;
+  bottom: -2.2vw;
   z-index: 1;
   display: inline-flex;
   flex-direction: column;
@@ -81,24 +84,25 @@
   cursor: pointer;
   &:hover {
     span {
-      color: #26A5FF;
+      color: #ff8b45;
     }
     img {
       -webkit-transition: width 0.2s linear;
       -moz-transition: width 0.2s linear;
       -o-transition: width 0.2s linear;
       transition: width 0.2s linear;
-      width: 0.35vw;
+      width: 0.9vw;
     }
   }
   span {
-    font-family: "Poppins", sans-serif;
-    font-size: 1vw;
+    font-family: "Poppins";
+    font-size: 25px;
     line-height: 1.8vw;
     color: #F7F6F3;
   }
   img {
-    width: 0.45vw;
+    margin-top: 1.5vw;
+    width: 0.75vw;
   }
 }
 /* FOOTER */
@@ -113,7 +117,7 @@
   font-size: 4vw;
 }
 span{
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins';
 }
   display: none;
   position: fixed;
@@ -138,7 +142,7 @@ span{
         }
         span {
           display: block;
-          font-weight: 100;
+          font-weight: 200;
         }
         h2 {
           display: block;
@@ -180,7 +184,7 @@ span{
               }
               span {
                 font-size: 1vw;
-                font-weight: 300;
+                font-weight: 200;
                 color: #fff;
                 margin-left: 0.7vw;
               }
@@ -214,7 +218,7 @@ span{
       display: inline-flex;
       span {
         font-size: 1vw;
-        font-weight: 300;
+        font-weight: 200;
         color: white;
       }
     }
@@ -251,7 +255,7 @@ span{
       }
       span {
         font-size: 1.3vw;
-        font-weight: 400;
+        font-weight: 200;
         letter-spacing: 0.05vw;
         color: #F7F6F3;
       }
@@ -259,7 +263,7 @@ span{
       input {
         font-size: 2.2vw;
         line-height: 2.8vw;
-        font-weight: 400;
+        font-weight: 200;
         letter-spacing: 0.1vw;
         color: #fff;
         opacity: .9;
@@ -270,7 +274,7 @@ span{
         &::placeholder {
           color: #fff;
           opacity: .9;
-          font-weight: 400;
+          font-weight: 200;
           letter-spacing: 0.1vw;
         }
       }
@@ -294,7 +298,7 @@ span{
         transition: .4s;
         span {
           font-size: 1vw;
-          font-weight: 500;
+          font-weight: 300;
           color: #fff;
         }
         img {
@@ -316,6 +320,7 @@ header {
   background-color: #0E1529;
   padding: 3.8% 11% 0 11%;
   .logo-nav-box {
+    height: 0vw;
     display: none;
     justify-content: space-between;
     position: fixed;
@@ -353,7 +358,7 @@ header {
     display: none;
   }
   .main-title-box {
-    margin-top: 34vw;
+    margin-top: 36vw;
 
   }
 
@@ -504,23 +509,23 @@ header {
 
 .binaryvision {
   text-align: justify;
-  font-size: 1.5vw;
+  font-size: 25px;
   margin-top: 10vw;
   padding-left: 20vw;
   display: none;
   color: #0E1529;
-  animation-duration: 1.6s;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  animation-duration: 0.6s;
+  font-family: 'Poppins';
 }
 
 .content {
   text-align: justify;
   width: 54vw;
-  font-size: 1.5vw;
+  font-size: 20px;
   color: #0E1529;
-  font-family: 'Poppins',sans-serif;
+  font-family: 'Poppins';
   display: none;
-  animation-duration: 0.6s;
+  animation-duration: 0.5s;
   padding-left: 25vw;
 }
 .case-studies-section {
@@ -540,7 +545,7 @@ header {
       left: -3vw;
       position: absolute;
       transform: rotate(-90deg);
-      font-family: sans-serif;
+      font-family: 'Montserrat';
       z-index: 1;
       color: #0E1529;
       animation-name: developmentBrand;
@@ -558,7 +563,7 @@ header {
           // top: 3vw;
           position: absolute;
           transform: rotate(-90deg);
-          font-family: 'Poppins', sans-serif;
+          font-family: 'Poppins';
           z-index: 1;
           display: none;
           animation-duration: 1s;
@@ -584,9 +589,9 @@ header {
               text-align: justify;
               margin-right: 37vw;
               display: none;
-              animation-delay: 1.5s;
-              animation-duration: 1s;
-              font-family: 'Poppins', sans-serif;
+              animation-delay: 1s;
+              animation-duration: 0.6s;
+              font-family: 'Poppins';
           }
       }
       
@@ -613,16 +618,17 @@ header {
           color: #0E1529;
           line-height: 1.8vw;
           display: none;
-          animation-delay: 1.5s;
-          animation-duration: 1s;
+          animation-delay: 1s;
+          animation-duration: 0.6s;
           h4{
               margin-bottom: 0;
-              font-family: 'Monteserrat', sans-serif;
+              font-family: 'Montserrat';
           }
           ul{
+              font-weight: 300;
               padding-left: 0;
               margin-top: 0;
-              font-family: 'Poppins', sans-serif;
+              font-family: 'Poppins';
           }
       }
 
@@ -641,9 +647,9 @@ header {
               padding-top: 10vw;
               margin-right: 25vw;
               text-align: justify;
-              font-family: 'Poppins', sans-serif;
-              animation-delay: 1.5s;
-              animation-duration: 1s;
+              font-family: 'Poppins';
+              animation-delay: 1s;
+              animation-duration: 0.6s;
           }
 
       }
@@ -654,7 +660,7 @@ header {
           left: 68vw;
           position: absolute;
           transform: rotate(90deg);
-          font-family: sans-serif; 
+          font-family: 'Montserrat'; 
           z-index: 1;
           animation-name: uiBrand;
           display: none;
@@ -671,7 +677,7 @@ header {
           top: 81vw;
           position: absolute;
           transform: rotate(90deg);
-          font-family: 'Poppins', sans-serif;
+          font-family: 'Poppins';
           z-index: 1;
           animation-name: uiBrandSpan;
           display: none;
@@ -690,17 +696,18 @@ header {
           left: 70vw;
           line-height: 1.8vw;
           display: none;
-          animation-delay: 1.5s;
-          animation-duration: 1s;
+          animation-delay: 1s;
+          animation-duration: 0.6s;
           h4{
               margin-bottom: 0;
-              font-family: 'Monteserrat', sans-serif;
+              font-family: 'Montserrat';
               text-align: end;
           }
           ul{
+              font-weight: 300;
               padding-left: 0;
               margin-top: 0;
-              font-family: 'Poppins', sans-serif;
+              font-family: 'Poppins';
               text-align: end;
           }
       }
@@ -800,9 +807,9 @@ header {
               color: #0E1529;
               margin-right: 40vw;
               text-align: justify;
-              animation-delay: 1.5s;
-              animation-duration: 1s;
-              font-family: 'Poppins', sans-serif;
+              animation-delay: 1s;
+              animation-duration: 0.6s;
+              font-family: 'Poppins';
           }
       }
       
@@ -813,7 +820,7 @@ header {
           color: #0E1529;
           position: absolute;
           transform: rotate(-90deg);
-          font-family: sans-serif; 
+          font-family: 'Montserrat'; 
           z-index: 1;
           animation-name: digitalBrand;
           display: none;
@@ -830,7 +837,7 @@ header {
           color: #0E1529;
           position: absolute;
           transform: rotate(-90deg);
-          font-family: 'Poppins', sans-serif;
+          font-family: 'Poppins';
           z-index: 1;
           animation-name: digitalBrandSpan;
           display: none;
@@ -848,16 +855,17 @@ header {
           left: 11vw;
           line-height: 1.8vw;
           display: none;
-          animation-delay: 1.5s;
-          animation-duration: 1s;
+          animation-delay: 1s;
+          animation-duration: 0.6s;
           h4{
               margin-bottom: 0;
-              font-family: 'Monteserrat', sans-serif;
+              font-family: 'Montserrat';
           }
           ul{
+              font-weight: 300;
               padding-left: 0;
               margin-top: 0;
-              font-family: 'Poppins', sans-serif;
+              font-family: 'Poppins';
           }            
       }
 
@@ -962,9 +970,9 @@ header {
               padding-top: 14vw;
               margin-right: 25vw;
               text-align: justify;
-              font-family: 'Poppins', sans-serif;
-              animation-delay: 1.5s;
-              animation-duration: 1s;
+              font-family: 'Poppins';
+              animation-delay: 1s;
+              animation-duration: 0.6s;
           }
       }
 
@@ -976,7 +984,7 @@ header {
           color: #0E1529;
           position: absolute;
           transform: rotate(90deg);
-          font-family: sans-serif;
+          font-family: 'Montserrat';
           animation-name: brandBrand;
           display: none;
           animation-duration: 1s;
@@ -987,12 +995,12 @@ header {
       }
       .brand-brand-span {
           font-size: 1.5vw;
-          left: 71.5vw;
+          left: 71vw;
           top: 238vw;
           color: #0E1529;
           position: absolute;
           transform: rotate(90deg);
-          font-family: 'Poppins', sans-serif;
+          font-family: 'Poppins';
           z-index: 1;
           animation-name: brandBrandSpan;
           display: none;
@@ -1010,17 +1018,18 @@ header {
           color: #0E1529;
           line-height: 1.8vw;
           display: none;
-          animation-delay: 1.5s;
-          animation-duration: 1s;
+          animation-delay: 1s;
+          animation-duration: 0.6s;
           h4{
               margin-bottom: 0;
-              font-family: 'Monteserrat', sans-serif;
+              font-family: 'Montserrat';
               text-align: end;
           }
           ul{
+              font-weight: 300;
               padding-left: 0;
               margin-top: 0;
-              font-family: 'Poppins', sans-serif;
+              font-family: 'Poppins';
               text-align: end;
           }
       }

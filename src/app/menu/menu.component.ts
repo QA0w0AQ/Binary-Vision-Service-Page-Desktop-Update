@@ -76,7 +76,7 @@ export class MenuComponent implements OnInit {
     x:any;
     c:any;
     projectSupStyle:any="vertical-align:super;font-weight:bold;font-size:0.7vw;margin-left:0.4vw";
-    projectBoxsStyle:any="line-height: 5vw;font-size: 1.4vw;font-family: 'Montserrat', sans-serif;color: white;font-weight: bold;"
+    projectBoxsStyle:any="line-height: 5vw;font-size: 1.4vw;font-family: 'Montserrat';color: white;font-weight: bold;"
     projectBoxStyle:any="animation-name:showup;display: flex;transition-duration: 0.6s;justify-content: space-between;"
     public view = ``;
     projectView = `<div class="projectbox animated showup" style="${this.projectBoxStyle}">
@@ -170,44 +170,11 @@ export class MenuComponent implements OnInit {
     this.connect = document.querySelector('.menu__item-name.connect');
     this.content = document.getElementById('case-content');
     this.menu__item = document.getElementById('global-menu__wrap');
-    this.x = window.matchMedia("(max-width: 450px)")
-    this.c  = document.getElementById('case-content');
 
 
-
-    this.x.addListener((this.x)={
-      myFunction() {
-        if (this.x.matches) { // If media query matches
-          this.c.innerHTML="";
-          this.projects.addEventListener('click', ()=>{
-            this.menu__item.setAttribute("style", "opacity:0;");
-            this.c.innerHTML=`<div class='newbox'>
-            <div class='box1'>
-              <span>Looper</span><sup style="color:#FFD93E">New</sup><br>
-              <span>Rent Your Ride</span><sup style="color:#F08064">New</sup><br>    
-              <span>Alpha Crypto</span><sup style="color:#03A6B4">New</sup><br>
-              <span>PritchArt</span><sup>COMING SOON</sup>
-            </div>
-            <div class='box2'>
-              <span>Giggl</span><sup>COMING SOON</sup><br
-              <span>Iraqi Souq</span><sup>COMING SOON</sup><br>
-              <span>NextWave Girls</span><sup>COMING SOON</sup><br>
-              <span>Kenergy Active</span><sup>COMING SOON</sup>
-            </div>
-            <div class='box3'>    
-            <span>Arvin</span><sup>COMING SOON</sup><br>   
-              <span>Iungo Social</span><sup>COMING SOON</sup><br>
-              <span>Kenergy Ventures</span><sup>COMING SOON</sup><br>
-              <span>KenergyLabs</span><sup>COMING SOON</sup>
-            </div>
-            </div>`
-          })
-        } 
-      }
-    });
-    
   }
 
+  
 
   toggle() {
     this.isAnimating = true;
