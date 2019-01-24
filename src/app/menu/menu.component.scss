@@ -118,13 +118,17 @@ sup {
   display: flex;
   flex-direction: row;
 }
-.contacts-social-lists .contacts-list:hover {
-  color: #75e2ff;
+.contacts-social-lists .contacts-list 
+{
+	li {
+		display: inline-flex;
+		align-items: center;
+	  }
+	li:hover {
+  	color: #75e2ff;
+	}
 }
-.contacts-social-lists .contacts-list li {
-  display: inline-flex;
-  align-items: center;
-}
+
 .contacts-social-lists .contacts-list li {
   margin-bottom: 0;
 }
@@ -133,6 +137,8 @@ sup {
   align-items: center;
   text-decoration: none;
   cursor: pointer;
+  font-weight: 300;
+  font-family: Poppins;
 }
 .contacts-social-lists .contacts-list:first-of-type li span {
   font-size: 1.2vw;
@@ -146,7 +152,6 @@ sup {
   margin-right: 3vw;
 }
 .contacts-social-lists .social-list a {
-  color: #fff;
   cursor: pointer;
 }
 .contacts-social-lists .social-list a:hover,a:focus {
@@ -459,9 +464,6 @@ a.demo--current {
 	z-index: 100;
 }
 
-.demo-5 .global-menu {
-	text-align: center;
-}
 
 .global-menu__item {
 	color: var(--color-menu);
@@ -1121,25 +1123,5 @@ a.demo--current {
 		margin-left: 0.4vw;
 		font-size: 2.5vw;
 	} 
-	/* .case-content {
-		color: white;
-		height: 150vw;
-		position: absolute;
-		margin-top: 4vw;
-		transition-duration: 1s;
-	}
-	
-	.newbox {
-		display: flex;
-		flex-direction: column;
-		color: white;
-		font-size: 2vw;
-	}
 
-	sup {
-		vertical-align: super;
-		font-weight: bold;
-		margin-left: 0.4vw;
-		font-size: 1vw;
-	} */
   }

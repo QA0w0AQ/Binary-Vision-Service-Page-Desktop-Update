@@ -37,7 +37,7 @@ sup {
   padding-right: 5.5vw;
   animation-duration: 0.6s;
   font-family: 'Poppins';
-  font-weight: lighter;
+  font-weight: 200;
   text-align: right;
 }
 .headersubtitle {
@@ -47,7 +47,7 @@ sup {
   display: none;
   animation-duration: 0.6s;
   font-family: 'Montserrat';
-  font-weight: 700;
+  font-weight: bold;
   float: right;
 }
 
@@ -199,7 +199,7 @@ span{
             color: #fff;
             cursor: pointer;
             &:hover {
-              color: #0E1529;
+              color: #75E2FF;
             }
           }
           li {
