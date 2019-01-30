@@ -12,7 +12,10 @@ import { BeteazeComponent } from './beteaze/beteaze.component';
 import { MainComponent } from './main/main.component';
 import { KoffeeRunComponent } from './koffee-run/koffee-run.component';
 import { MenuComponent } from './menu/menu.component';
+import { LooperComponent } from './looper/looper.component';
+import { HomeComponent } from './home/home.component';
 import { HtmlPipe } from './menu/innerhtmlpipe.component';
+import { CareersComponent } from './careers/careers.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { HtmlPipe } from './menu/innerhtmlpipe.component';
     MainComponent,
     KoffeeRunComponent,
     MenuComponent,
-    HtmlPipe
+    HtmlPipe,
+    LooperComponent,
+    HomeComponent,
+    CareersComponent
   ],
   imports: [
     AppRoutingModule,

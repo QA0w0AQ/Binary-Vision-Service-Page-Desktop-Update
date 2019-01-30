@@ -19,10 +19,12 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
+        "../node_modules/wowjs/css/libs/animate.css",
+        "../node_modules/aos/dist/aos.css",
         "../node_modules/animate.css/animate.css",
         "styles.css"
       ],
-      "scripts": [],
+      "scripts": ["../node_modules/wowjs/dist/wow.min.js"],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
