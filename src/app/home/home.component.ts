@@ -12,6 +12,8 @@ export class HomeComponent implements OnInit {
   constructor() {     }
   
   ngOnInit() {
-    new WOW().init();
+    new WOW({
+      live :  false 
+    }).init();
   }
 }
