@@ -659,13 +659,17 @@
 		</div>
 	</footer>
 
-	<!-- <script src="./js/libs.js"></script>
-	<script src="./js/script.js"></script> -->
+	<script src="../home/libs.js"></script>
+	<script src="../home/script.js"></script>
 	<script>
-			new WOW({
-				live :  false 
-			}).init();
-		</script>
+	(function(){
+        $(window).ready(function(){
+            $("#s-projects-slider, #s-clients-slider").mThumbnailScroller({
+              axis:"x"
+            });
+        });
+    })();
+	</script>
 </body>
 
 </html>

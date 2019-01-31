@@ -9,7 +9,7 @@
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400|Arapey" rel="stylesheet">
 		<!-- <link rel="stylesheet" type="text/css" href="pater/pater.css" /> -->
-		<script>document.documentElement.className = 'js';</script>
+		<!-- <script>document.documentElement.className = 'js';</script> -->
 	</head>
 	<body class="navigation">
 		<main class="main main--navigation">
@@ -35,45 +35,45 @@
 				
 				
 				<div class="global-menu">
-					<div class="case-content" id="case-content" [innerHTML]="view | html"></div>
-					<div class="contacts-social-lists" style="display:none" id="contacts-social-lists">
+					<div class="global-menu__item case-content" id="case-content"></div>
+					<div class="global-menu__item contacts-social-lists" style="display:none" id="contacts-social-lists">
 								<ul class="social-list">
 										<li>
-											<a href="#">
-												<i class="fab fa-facebook-f"></i>
+											<a href="https://www.facebook.com/binaryvisionstudios">
+												<svg xmlns="http://www.w3.org/2000/svg" width="10" height="20" viewBox="0 0 10 20">
+													<path fill="#FFF" fill-rule="nonzero" d="M9.65 6.5H6.5V4.4c0-.8.5-.95.9-.95h2.25V0H6.5C3.1 0 2.3 2.55 2.3 4.2v2.3H.35V10H2.3v10h4.2V10h2.8l.35-3.5z"/>
+												</svg>
 											</a>
 										</li>
 										<li>
-											<a href="#">
-												<i class="fab fa-instagram"></i>
+											<a href="https://www.instagram.com/binaryvisionstudios">
+												<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+													<g fill="#FFF" fill-rule="nonzero">
+														<circle cx="15.25" cy="4.3" r="1.15"/>
+														<path d="M18.3 1.5C17.25.45 15.7 0 14 0H5.8C2.3 0 0 2 0 5.45v8.05c0 1.7.55 3.3 1.7 4.35 1.1 1 2.5 1.7 4.15 1.7H14c1.7 0 3.25-.7 4.3-1.7 1.1-1 1.7-2.6 1.7-4.3v-8.1c0-1.65-.65-2.95-1.7-3.95zM18 13.75c0 1-.35 2.15-1.1 2.8-.75.65-1.7.95-2.9.95H5.85c-1.2 0-2.1-.4-2.85-1.05-.7-.7-1-1.75-1-2.95V5.45c0-1.2.3-1.95 1-2.65.7-.65 1.65-.8 2.85-.8h8.25c1.2 0 2.15.15 2.9.85.7.7 1.05 1.45 1.05 2.6v8.3H18z"/>
+														<path d="M9.9 4.4c-2.8 0-5.1 2.25-5.1 5 0 2.8 2.3 5 5.1 5 2.85 0 5.1-2.25 5.1-5 .05-2.7-2.3-5-5.1-5zm0 8.25c-1.8 0-3.3-1.45-3.3-3.2 0-1.75 1.5-3.2 3.3-3.2 1.8 0 3.3 1.45 3.3 3.2 0 1.75-1.5 3.2-3.3 3.2z"/>
+													</g>
+												</svg>
 											</a>
 										</li>
 										<li>
-											<a href="#">
-												<i class="fab fa-dribbble"></i>
+											<a href="https://dribbble.com/binaryvision">
+												<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+													<path fill="#FFF" fill-rule="nonzero" d="M19.571 5.224a10.445 10.445 0 0 0-3.817-3.817C14.147.469 12.392 0 10.49 0 8.586 0 6.831.469 5.224 1.407a10.442 10.442 0 0 0-3.817 3.817C.469 6.83 0 8.586 0 10.489c0 1.903.469 3.658 1.407 5.265a10.445 10.445 0 0 0 3.817 3.817c1.607.938 3.362 1.407 5.265 1.407 1.903 0 3.658-.47 5.265-1.407a10.442 10.442 0 0 0 3.817-3.817c.938-1.607 1.407-3.362 1.407-5.265 0-1.903-.47-3.658-1.407-5.265zM10.49 1.53c2.258 0 4.23.746 5.914 2.24l-.171.238c-.068.096-.24.28-.512.553a8.778 8.778 0 0 1-.895.779c-.323.246-.762.526-1.318.84-.555.314-1.147.59-1.775.826-1.047-1.93-2.167-3.67-3.36-5.217a9.035 9.035 0 0 1 2.117-.26zm-7.02 3.4a8.838 8.838 0 0 1 3.196-2.54c1.129 1.502 2.24 3.223 3.332 5.162a32.4 32.4 0 0 1-8.276 1.093A8.855 8.855 0 0 1 3.469 4.93zm-1.338 8.79a8.788 8.788 0 0 1-.601-3.231c0-.128.004-.223.013-.287 3.296 0 6.36-.423 9.192-1.27.291.564.533 1.07.724 1.516a1.104 1.104 0 0 1-.178.061 8.524 8.524 0 0 1-.178.048l-.505.178c-.346.127-.8.346-1.359.655-.56.31-1.154.678-1.782 1.107-.628.428-1.277.994-1.946 1.7a11.448 11.448 0 0 0-1.687 2.274 8.97 8.97 0 0 1-1.693-2.752zm8.358 5.728c-2.13 0-4.034-.683-5.709-2.048l.205.15c.319-.701.787-1.375 1.407-2.021.619-.647 1.215-1.168 1.789-1.564a17.63 17.63 0 0 1 1.871-1.12c.674-.35 1.133-.574 1.38-.67.245-.095.441-.17.587-.225l.027-.014h.027c.892 2.34 1.53 4.608 1.912 6.802a8.955 8.955 0 0 1-3.496.71zm7.54-4.118a8.95 8.95 0 0 1-2.527 2.589 38.48 38.48 0 0 0-1.749-6.406c1.812-.282 3.674-.15 5.586.396a8.839 8.839 0 0 1-1.31 3.421zm1.283-4.964a11.12 11.12 0 0 0-.342-.061l-.498-.082a13.76 13.76 0 0 0-.656-.09 22.513 22.513 0 0 0-2.588-.15c-.319 0-.654.01-1.004.028-.35.018-.69.05-1.017.096a1.618 1.618 0 0 1-.103-.226 4.722 4.722 0 0 1-.088-.239 90.654 90.654 0 0 0-.602-1.297 14.016 14.016 0 0 0 1.797-.881 13.959 13.959 0 0 0 1.365-.888c.342-.26.665-.535.97-.826.305-.292.503-.494.594-.608.091-.114.178-.226.26-.335l.013-.013c1.33 1.62 2.008 3.487 2.035 5.6l-.136-.028z" opacity=".9"/>
+												</svg>
 											</a>
 										</li>
 									</ul>	
 							<ul class="contacts-list">	
-									<li>
-										<a href="tel:+604-359-7187">
-											<img src="assets/icons/phone.png" alt="" style=" width: 1.2vw;">
-											<span>+604-359-7187</span>
-										</a>
-									</li>
-									<li style="margin-left:2vw;">
-										<a href="mailto:hello@binary.vision">
-												<img src="assets/icons/mail.png" alt="" style=" width: 1.2vw;">
-												<span>hello@binary.vision</span>
-											</a>
-									</li>
-								</ul>
+									<div class="detail-text"><a href="tel:+604-359-7187"><img src="assets/icons/phone.png" alt="phone-icon"> &nbsp; +604-359-7187</a></div>
+									<div class="detail-text"><a href="mailto:hello@binary.vision"><img src="assets/icons/mail.png" alt="mail-icon"> &nbsp; hello@binary.vision</a></div>		
+							</ul>
 					</div>
 					<div class="logo" id="logo">
 						<img src="assets/icons/Group 4.png" alt="">
 					</div>
 					<div class="global-menu__wrap" id="global-menu__wrap">
-							<a class="global-menu__item global-menu__item--navigation" href="#">
+							<a class="global-menu__item global-menu__item--navigation" href="#/home">
 								<span class="menu__item-name capabilities" (click)="showCapabilities()" (mouseover)="showCapabilities()" >CAPABILITIES</span>
 								<span class="menu__item-label">
 									Creating relatable and unforgettable experiences, services, and products is our mission. Your ideas are our reality.

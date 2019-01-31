@@ -75,28 +75,29 @@ export class MenuComponent implements OnInit {
     menu__item:any;
     x:any;
     c:any;
-    projectSupStyle:any="vertical-align:super;font-weight:bold;font-size:0.7vw;margin-left:0.4vw";
+    projectSupStyle:any="vertical-align:super;font-weight:bold;font-size:0.7vw;margin-left:0.4vw;";
+    projectAlinkStyle:any="text-decoration: none;color:white;";
     projectBoxsStyle:any="line-height: 5vw;font-size: 1.4vw;font-family: 'Montserrat';color: white;font-weight: bold;"
     projectBoxStyle:any="animation-name:showup;display: flex;transition-duration: 0.6s;justify-content: space-between;"
     public view = ``;
     projectView = `<div class="projectbox animated showup" style="${this.projectBoxStyle}">
     <div class="box1" style="${this.projectBoxsStyle}">
-      <span>Looper</span><sup style="color:#FFD93E;${this.projectSupStyle}">New</sup><br>
-      <span>Arvin</span><sup style="color:#535fff;${this.projectSupStyle}">New</sup><br>
-      <span>Giggl</span><sup style="color:#00ffd2;${this.projectSupStyle}">New</sup><br>
-      <span>Vier</span><sup style="${this.projectSupStyle}">COMING SOON</sup>
+      <a href="#/looper"style="${this.projectAlinkStyle}">Looper</a><sup style="color:#FFD93E;${this.projectSupStyle}">New</sup><br>
+      <a href="#link"style="${this.projectAlinkStyle}">Arvin</a><sup style="color:#535fff;${this.projectSupStyle}">New</sup><br>
+      <a href="#link"style="${this.projectAlinkStyle}">Giggl</a><sup style="color:#00ffd2;${this.projectSupStyle}">New</sup><br>
+      <a href="#link"style="${this.projectAlinkStyle}">Vier</a><sup style="${this.projectSupStyle}">COMING SOON</sup>
     </div>
     <div class="box2" style="${this.projectBoxsStyle}">
-      <span>Alpha Crypto</span><sup style="color:#ff8b45;${this.projectSupStyle}">New</sup><br>
-      <span>Iraqi Souq</span><sup style="${this.projectSupStyle}">COMING SOON</sup><br>
-      <span>NextWave Girls</span><sup style="color:#ff4b63;${this.projectSupStyle}">New</sup><br>
-      <span>Kenergy Active</span><sup style="${this.projectSupStyle}">COMING SOON</sup>
+      <a href="#link"style="${this.projectAlinkStyle}">Alpha Crypto</a><sup style="color:#ff8b45;${this.projectSupStyle}">New</sup><br>
+      <a href="#link"style="${this.projectAlinkStyle}">Iraqi Souq</a><sup style="${this.projectSupStyle}">COMING SOON</sup><br>
+      <a href="#link"style="${this.projectAlinkStyle}">NextWave Girls</a><sup style="color:#ff4b63;${this.projectSupStyle}">New</sup><br>
+      <a href="#link"style="${this.projectAlinkStyle}">Kenergy Active</a><sup style="${this.projectSupStyle}">COMING SOON</sup>
     </div>
     <div class="box3" style="${this.projectBoxsStyle}">
-      <span>Rent Your Ride</span><sup style="color:#ff4b63;${this.projectSupStyle}">New</sup><br>
-      <span>Iungo Social</span><sup style="color:#ffe500;${this.projectSupStyle}">New</sup><br>
-      <span>Kenergy Ventures</span><sup style="${this.projectSupStyle}">COMING SOON</sup><br>
-      <span>KenergyLabs</span><sup style="${this.projectSupStyle}">COMING SOON</sup>
+      <a href="#link"style="${this.projectAlinkStyle}">Rent Your Ride</a><sup style="color:#ff4b63;${this.projectSupStyle}">New</sup><br>
+      <a href="#link"style="${this.projectAlinkStyle}">Iungo Social</a><sup style="color:#ffe500;${this.projectSupStyle}">New</sup><br>
+      <a href="#link"style="${this.projectAlinkStyle}">Kenergy Ventures</a><sup style="${this.projectSupStyle}">COMING SOON</sup><br>
+      <a href="#link"style="${this.projectAlinkStyle}">KenergyLabs</a><sup style="${this.projectSupStyle}">COMING SOON</sup>
     </div>
     </div>`;
 
